@@ -1,0 +1,242 @@
+
+.proTabs{
+    padding-top: 160px;
+   /deep/ .am-list-item .am-list-line .am-list-content{
+        color:#9a9a9a !important;
+    }
+    .am-tabs-tab-bar-wrap{
+        height: 60px;
+    }
+    
+    .am-tabs-default-bar-tab {
+        height: 60px;
+        line-height: 60px;
+        font-size: 26px;
+        color: #999999;
+        &::before{
+            background: #fff;
+        }
+       
+    }
+    .am-tabs-default-bar-top .am-tabs-default-bar-tab{
+        border: none;
+       
+    }
+    .am-list-body::before{
+        height: 0;
+    }
+    .am-tabs-default-bar-top .am-tabs-default-bar-tab::after{
+        height: 0;
+    }
+    .am-tabs-default-bar-tab-active{
+        font-size: 32px;
+        color: #222222;
+    }
+    .am-tabs-default-bar-underline{
+        border: none;
+        text-align: center;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 35%;
+            height: 4px;
+            background: red;
+            left: 33%;
+            
+        }
+
+    }
+    .allRemark{
+        /deep/ .Infolist .am-list-item{
+            height: 100px;
+            // padding:0 70px 0 40px;
+            .am-list-content{
+                padding-left:32.7px;
+                font-size: 28px;
+                color: #999999;
+            }
+            .am-list-extra{
+                padding-right: 70px;
+                font-size: 28px;
+                color: #222222;
+            }    
+        }
+    }
+    
+    
+}
+
+//  账户信息
+.accountInfo{
+    padding: 40px 30px 30px 30px;
+    .am-card{
+        margin-bottom: 30px;
+    }
+    .am-card-header{
+        height: 95px;
+        line-height: 95px;
+        padding: 0 39px 0 29px; 
+    }
+    .account-type{
+        font-size: 28px;
+        color: #666666;
+    }
+    .am-list-item{
+        height: 100px;
+    }
+    .account{
+        font-size: 22px;
+        color: #666666;
+    }
+    .startAct{
+        color: #EC3E42;
+        font-size: 22px;
+    }
+    .am-card /deep/  .am-card-body{
+        &::before{
+            height: 0;
+        }
+        .am-list-body::before,.am-list-body::after{
+            height: 0;
+        }
+     /deep/ .am-list-item .am-list-line .am-list-extra{
+            overflow: initial;
+            white-space: normal;
+            flex-basis:50%;
+        }
+    }
+  
+}
+.emailInfo{
+    padding: 40px 30px 30px 30px;
+    .am-card{
+        margin-bottom: 30px;
+    }
+    .am-card-header{
+        height: 95px;
+        line-height: 95px;
+        padding: 0 39px 0 29px; 
+    }
+    .account-type{
+        font-size: 28px;
+        color: #666666;
+    }
+    .am-list-item{
+        height: 100px;
+    }
+    .account{
+        font-size: 22px;
+        color: #666666;
+    }
+    /deep/ .am-list-item .am-list-line .am-list-content{
+        font-size: 28px;
+        color: #222222 !important ;
+    }
+    .startAct{
+      
+        display: inline-block;
+        width: 54px;
+        height: 38px;
+        background-image: url('../../assets/hs/product/邮箱@3x.png');
+        background-size: cover;
+    }
+    .am-card /deep/  .am-card-body{
+        &::before{
+            height: 0;
+        }
+        .am-list-body::before,.am-list-body::after{
+            height: 0;
+        }
+     /deep/ .am-list-item .am-list-line .am-list-extra{
+            overflow: initial;
+            white-space: normal;
+            flex-basis:50%;
+        }
+    }
+}
+.flowSteps{
+    padding: 80px 88px 0 22px;
+
+    .startFlow{
+        padding-left:60px;
+        padding-right:100px;
+        width: 640px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .statusText{
+        font-size: 22px;
+        color: #999999;
+    }
+    .endFlow{
+        padding-left:70px;
+        display: flex;
+        width: 640px;
+        justify-content: space-between;
+    }
+    .step{
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-left:80px;
+        .step-container{
+            width: 640px;
+        }
+        ul,li{
+            list-style: none;
+            
+        }
+        .topUl{
+            display: flex;
+            // flex-wrap: wrap;
+            align-items: center;
+            height: 120px;
+            width: 640px;
+            li:nth-child(odd){
+                width: 15px;
+                height: 15px;
+                background-color: #ddd;
+                border-radius: 7.5px;
+                margin:0 7.5px;
+            }
+            li:nth-child(even){
+                width:81px;
+                height: 4px;
+                background-color: #ddd;
+            }
+        }
+        .bottomUl{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            height: 120px;
+            width: 640px;
+            li:nth-child(odd){
+                width: 15px;
+                height: 15px;
+                background-color: #ddd;
+                border-radius: 7.5px;
+                margin:0 7.5px;
+            }
+            li:nth-child(even){
+                width:120px;
+                height: 4px;
+                background-color: #ddd;
+            }
+        }
+       
+        .roundBorder{
+            width: 90px;
+            height: 126px;
+            border-top-right-radius: 60px;
+            border-bottom-right-radius: 60px;
+            border-top: 4px solid #ddd;
+            border-bottom: 4px solid #ddd;
+            border-right: 4px solid #ddd;
+            position: absolute;
+            right: -10px;
+        }
+    }
+    
+}

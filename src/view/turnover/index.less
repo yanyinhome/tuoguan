@@ -1,0 +1,98 @@
+.turnover{
+    .margin160{
+        margin-top: 160px;
+    }
+    .tab{
+        .tabtitle{
+            text-align: center;
+            font-size: 26px;
+            color: #999999;
+            position: relative;
+            height: 56px;
+            line-height: 56px;
+            .redBlock{
+                position: absolute;
+                bottom: -2px;
+                height: 4px;
+                width: 100%;
+            }
+        }
+        .active{
+            font-size: 32px;
+            color: #222222;
+            font-weight: bold;
+            .redBlock{
+                span{
+                    margin: 0 auto;
+                    width: 60px;
+                    height: 4px;
+                    border-radius: 2px;
+                    display:block;
+                    background: #E6393D;
+                }
+            }
+        }
+        .borderBottom{
+            padding-bottom: 11px;
+            border-bottom:1px solid #F4F4F4;
+        }
+        .content{
+           margin: 40px 30px;
+           border: 1px solid #dddddd;
+           .head{
+               height: 95px;
+               background: #F8F8F8;
+               padding: 30px 44px;
+               overflow: hidden;
+               .info{
+                  float: left;  
+                  width: 60%;
+               }
+               .balance{
+                    float: left;
+                    width: 40%;
+               }
+               .down{
+                width: 12px;
+                height: 100%;
+                margin-right: 8px;
+                display: inline-block;
+                background: url('/config/data/hosting/down.png') no-repeat center right/12px 17px;
+               }
+           }
+           .transactionbox{
+               .listItem{
+                   height: 114px;
+                   margin: 26px;
+                   padding-bottom: 26px;
+                   overflow: hidden;
+                   border-bottom: 1px solid #DDDDDD;
+                   .listRight{
+                       float: left;
+                       width: 40%;
+                       font-size: 28px;
+                       height: 88px;
+                       line-height: 88px;
+                       text-align: right;
+                   }
+                   .listLeft{
+                        float: left;
+                        width: 60%;
+                        font-size: 24px;
+                        color: #999999;
+                        div{
+                            height: 44px;
+                            line-height: 44px;
+                        }
+                   }
+                   .red{
+                       color:#E83637  ;
+                   }
+               }
+               .listItem:last-child{
+                   border-bottom: none;
+               }
+           }
+        }
+    }
+}

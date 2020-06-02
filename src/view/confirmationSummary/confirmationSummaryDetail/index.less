@@ -1,0 +1,60 @@
+.confirmationSummaryDetail{
+  .title{
+      margin-bottom: 30px;
+  }
+  .itemBox{
+      // height: 320px;
+      border: 1px solid #DDDDDD;
+      box-sizing: border-box;
+      margin: 30px;
+      .summaryDetailhead{
+        height: 100px;
+        line-height: 100px;
+        background: #f8f8f8; 
+        padding: 0px 30px;
+        font-size: 28px;
+        .summaryDetailId{
+          font-size: 22px;
+          display: inline-block;
+          margin-left: 10px;
+        }
+      }
+      .center{
+        border-bottom: 1px solid #DDDDDD;
+        padding: 0px 30px;
+        display: flex;
+        .center_child{
+          width: 33.3%;
+          text-align: center;
+          padding: 30px 0;
+          box-sizing: border-box;
+          .top{
+            font-size: 32px;
+            color: #222222;
+            .red{
+              color: #EC3E42;
+            }
+          }
+          .bottom{
+            font-size: 22px;
+            color: #999999;
+          }
+          .line_box{
+            border-left: 1px solid #DDDDDD;
+            border-right: 1px solid #DDDDDD;
+          }
+        }
+        >.center_child:first-child{
+          padding-right: 50px;
+        }
+        >.center_child:last-child{
+          padding-left: 50px;
+        }
+      }
+      >.bottom{
+        padding: 0 30px;
+        height: 70px;
+        line-height: 70px;
+      }
+  }
+}

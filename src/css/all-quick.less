@@ -1,0 +1,158 @@
+@import "common/BaseStyle";
+.all_quick-content{
+    height: 100%;
+    width: 100%;
+    padding-top:32.5px;
+    .tab_Bar{
+        height: 100px;
+        .am-navbar-left{
+            padding-left:40px;
+        }
+        .am-navbar{
+            height: 100%;
+            font-size: 80px;
+            height: 100px;
+            line-height: 100px;
+            // border-bottom: 1px solid #eee;
+        }
+        .am-navbar-left-icon{
+            width: 40px;
+            height: 40px;
+        }
+        .am-navbar-title{
+            font-family: 'PingFangSC-Medium';
+            font-size: 32px;
+            color: #222222;
+        }
+        
+        .leftIcon{
+            width: 40px;
+            height: 40px;
+            background-image: url('../assets/left-arrow@2x.png');
+            background-size: 20px;
+            background-repeat: no-repeat;
+            // margin-left:10px;
+            // background: red
+        }
+       
+    }
+    .category{
+        .am-tabs-tab-bar-wrap{
+            height: 60px;
+        }
+        
+        .am-tabs-default-bar-tab {
+            height: 60px;
+            line-height: 60px;
+            font-size: 26px;
+            color: #999999;
+            &::before{
+                background: #fff;
+            }
+           
+        }
+        .am-tabs-default-bar-top .am-tabs-default-bar-tab{
+            border: none;
+           
+        }
+        .am-list-body::before{
+            height: 0;
+        }
+        .am-tabs-default-bar-top .am-tabs-default-bar-tab::after{
+            height: 0;
+        }
+        .am-tabs-default-bar-tab-active{
+            font-size: 32px;
+            color: #222222;
+        }
+        .am-tabs-default-bar-underline{
+            border: none;
+            text-align: center;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 35%;
+                height: 4px;
+                background: red;
+                left: 33%;
+                
+            }
+
+        }
+      .allRemark{
+          height: 100%;
+          .notdata{
+            width: 100%;
+            text-align: center;
+            font-size: 40px;
+            line-height: 160px;
+        }   
+        .am-list-body{
+            padding-top:10px;
+        }
+          .all-item{
+              display: flex;
+              height: 240px;
+              text-align: center;
+              width: 100%;
+              padding: 20px;
+             
+              .item-left{
+                  width: 24%;
+                //   padding: 20px;
+                padding-left:20px;
+                .photo{
+                    width: 120px;
+                    height: 120px;
+                    // background: red;
+                    background-size: cover;
+                    border-radius: 50%;
+                }
+              }
+              .item-right{
+                  width: 70%;
+                  text-align: left;
+                  padding-left:20px;
+                  .userRemark{
+                    .userName{
+                        display: flex;
+                        height: 48px;
+                        line-height: 48px;
+                        align-items: center;
+                        .remarkPerson{
+                            color: #222222;
+                            font-size: 32px;
+                        }
+                        .catrgoryTitle{
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: 22px;
+                            margin-left:20px;
+                            padding:0 10px;
+                            background: #ccc;
+                            color: #fff;
+                            border-radius: 5px;
+                        }
+                    }
+                    .remarkTime{
+                        line-height: 48px;
+                        font-size: 24px;
+                        color: #999999;
+                    }
+                  }
+                  .remarkDec{
+                    line-height: 40px;
+                    height: 80px;
+                    overflow: hidden;
+                    font-size: 28px;
+                    color: #222222;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                  }
+              }
+          }
+      }
+    }
+    
+}

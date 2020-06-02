@@ -1,0 +1,87 @@
+@import "../css/common/BaseStyle";
+
+/*  首页速评卡片 */
+.quick_review_home_list_container{
+  height: 264px;
+  width: 100%;
+  padding-left: 40px;
+  overflow-x: auto;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+  display: flex;
+}
+
+.quick_review_home_list_container_none{
+  text-align: center;
+  .base-font(22px,#999999);
+}
+
+.quick_review_home_list_container .list{
+  white-space: nowrap;
+}
+
+.quick_review_home_list_container .cardItem{
+  display: inline-flex;
+  width: 580px;
+  height: 264px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #F4F4F4;
+  margin-right: 20px;
+}
+
+.cardItem .head{
+  width: 144px;
+  height: 144px;
+  border-radius: 144px;
+  margin:40px;
+  background-size: 144px 144px;
+  background-image: url('../assets/head_none.png');
+}
+
+.cardItem .personDesContainer{
+  display: flex;
+  flex-direction: row;
+  width: 303px;
+  flex-wrap: wrap;
+}
+
+.personDesContainer .name{
+  font-family: PingFangSC-Medium;
+  font-size: 32px;
+  color: #222222;
+  line-height: 24px;
+  margin-top: 50px;
+  height: 24px;
+}
+
+.personDesContainer .tag{
+  width: 108px;
+  height: 38px;
+  background: #CCCCCC;
+  border-radius: 4px;
+  line-height: 38px;
+  text-align: center;
+  margin-top: 45px;
+  margin-left: 20px;
+  .base-font(22px,#FFFFFF);
+}
+
+.personDesContainer .date{
+  flex: 0 0 100%;
+  .base-font(24px,#999999);
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+.personDesContainer .des{
+  width: 303px;
+  height: 84px;
+  margin-top: 10px;
+  .base-font(28px,#222222);
+  line-height: 42px;
+  white-space: normal;
+  .ellipsisMore(2);
+}
+

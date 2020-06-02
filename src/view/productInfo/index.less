@@ -1,0 +1,184 @@
+.productInfo{
+    .tab{
+        .tabtitle{
+            text-align: center;
+            font-size: 26px;
+            color: #999999;
+            position: relative;
+            // height: 56px;
+            line-height: 56px;
+            .redBlock{
+                position: absolute;
+                bottom: -2px;
+                height: 4px;
+                width: 100%;
+            }
+        }
+        .active{
+            font-size: 32px;
+            color: #222222;
+            font-weight: bold;
+            .redBlock{
+                span{
+                    margin: 0 auto;
+                    width: 60px;
+                    height: 4px;
+                    border-radius: 2px;
+                    display:block;
+                    background: #E6393D;
+                }
+            }
+        }
+        .borderBottom{
+            padding-bottom: 10px;
+            border-bottom:1px solid #F4F4F4;
+        }
+        .content{
+           margin: 18.5px 30px;
+           .transactionbox{
+               box-sizing: border-box;
+             .itemClass{
+                 font-size: 28px;
+                 color: #999999;
+                 text-align: left;
+                 height: 100px;
+                 line-height: 100px;
+                 border-bottom: 1px solid #DDDDDD;
+                 padding: 0 40px 0 10px;
+                 overflow: hidden;
+                 display: flex;
+                .itemTitle{
+                    display: inline-block;
+                    width: 35%;
+                }
+                 .itemContent{
+                    color: #222222;
+                    text-align: right;
+                    display: inline-block;
+                    width: 65%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                 }
+             }
+             .accountMessageBox{
+                 margin-top: 40px;
+                 border: 1px solid #DDDDDD;
+               .AccountHead{
+                  height: 95px;
+                  line-height: 95px;
+                  background: #F8F8F8;
+                  padding: 0 30px;
+                  font-size: 28px;
+                  color: #666666;
+                  .content{
+                      font-size: 22px;
+                      padding: 0;
+                  }
+                  .extend{
+                      color: #EC3E42;
+                      font-size: 22px;
+                      display: block;
+                      float: right;
+                  }
+               }
+               .content{
+                  margin: 0;
+                  padding: 0 30px;
+                  .itemClass{
+                      padding: 0;
+                  }
+                  >.itemClass:last-child{
+                    border-bottom: none;
+                }
+               }
+             }
+             .mail_box{
+                .mailItem{
+                    border: 1px solid #DDDDDD;
+                    margin-bottom: 42px;
+                   .mailBox_head{
+                       height: 100px;
+                       line-height: 100px;
+                       background: #F8F8F8;
+                       color: #666666;
+                       font-size: 28px;
+                       padding: 0 30px;
+                       .mailIcon{
+                           width: 54px;
+                           display: block;
+                           float: right;
+                           background: url('/config/data/product/邮箱.png') no-repeat center center/54px 38px;
+                           height: 100%;
+                       }
+                   }
+                   .mailBox_child{
+                      padding: 0 30px;
+                      .childItem{
+                          height: 100px;
+                          line-height: 100px;
+                          border-bottom:1px solid #DDDDDD;
+                          font-size: 28px;
+                          color: #222222;
+                      } 
+                      .childItem:last-child{
+                          border-bottom: none;
+                      }
+                      .noMail{
+                          text-align: center;
+                          line-height: 100px;
+                          height: 100px;
+                          color: #999999;
+                          font-size: 28px;
+                      }
+                   }
+                } 
+             }
+             .processInfoBox{
+                h3{
+                    color: #222222;
+                    font-size: 36px;
+                    line-height: 50px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #DDDDDD;
+                    margin-bottom: 40px;
+                } 
+               >.process_box{
+                   padding-left:35px;
+                   margin-left: 50px;
+                   padding-top: 30px;
+                   padding-bottom: 130px;
+                   border-left: 1px solid #DDDDDD;
+                    .processItem{
+                        position: relative;
+                        margin-top: 50px;
+                        .processItem_icon{
+                            position: absolute;
+                            width: 30px;
+                            height: 30px;
+                            left: -50px;
+                            background: url('/config/data/product/时钟.png') no-repeat center center/30px 30px;  
+                        }
+                        .processItem_time{
+                            line-height: 22px;
+                            height: 22px;
+                            color: #999999;
+                            font-size: 22px;
+                            margin-bottom: 20px;  
+                        }
+                        .processItem_title{
+                            color: #222222;
+                            font-size: 28px; 
+                            height: 40px;
+                            line-height: 40px;
+                        }
+                    }
+                    .processItem:nth-child(1){
+                        margin-top: 0;
+                    }
+               }
+             }
+           }
+        }
+    }
+}

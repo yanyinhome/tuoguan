@@ -1,0 +1,252 @@
+@import "./common/BaseStyle";
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  html:not([data-scale]) .am-tabs-default-bar-top .am-tabs-default-bar-tab {
+    border-bottom: 1px solid #F4F4F4;
+  }
+}
+
+/*tab样式修改*/
+.research-tabs {
+
+  width: 100%;
+  //position: relative;
+  background: white;
+
+  .am-tabs-default-bar-content{
+    top: 0;
+    width: 100%;
+    height: 127px;
+    background: white;
+    position: fixed;
+    z-index: 100;
+  }
+
+  .am-badge {
+    .base-font(28px);
+    //margin: 64px 0 23px 0;
+  }
+
+  .am-tabs-default-bar-tab.am-tabs-default-bar-tab-active {
+    .am-badge {
+      .base-font(32px);
+      //margin: 60px 0 15px 0;
+    }
+  }
+
+  .am-tabs-tab-bar-wrap{
+    height: 127px!important;
+  }
+
+  .am-tabs-pane-wrap-active{
+    background: white;
+  }
+
+  .am-tabs {
+    height: auto;
+
+    .am-tabs-default-bar-top .am-tabs-default-bar-tab {
+      border-color: #F4F4F4;
+      border-width: 1.5px;
+    }
+
+    .am-tabs-default-bar-tab {
+      font-size: 26px;
+      height: auto;
+      line-height: normal;
+      color: #999;
+    }
+
+    .am-tabs-default-bar-top .am-tabs-default-bar-tab, .am-tabs-default-bar-bottom .am-tabs-default-bar-tab {
+      padding: 33px 0 15px;
+    }
+
+    .am-tabs-default-bar-tab-active {
+      font-size: 32px;
+      color: #222;
+    }
+
+    .am-tabs-default-bar-underline {
+      border: none;
+      text-align: center;
+
+      &::before {
+        content: '';
+        width: 60px !important;
+        height: 4px;
+        border-radius: 4px;
+        background-color: #E6393D;
+        display: inline-block;
+        position: relative;
+        bottom: -3px;
+      }
+    }
+
+    .am-tabs-default-bar-top .am-tabs-default-bar-tab::after {
+      background-color: transparent !important;
+    }
+  }
+
+
+  .titleBar {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 40px 0 40px;
+    padding-bottom: 20px;
+
+    .titleText {
+      .m-font(36px, #222222);
+    }
+
+    .more {
+      .base-font(#222222);
+      align-self: flex-end;
+    }
+  }
+
+  /*分析师*/
+  .list-analysts {
+    white-space: nowrap;
+    overflow-x: auto;
+    margin: 0 0 0 40px;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .list-analysts-div {
+    display: inline-flex;
+    .whl(580px, 256px);
+    background: #F4F4F4;
+    margin: 40px 20px 40px 0;
+    border-radius: 8px;
+    flex-direction: row;
+
+    .list-analysts-img {
+      .whl(144px, 144px);
+      border-radius: 144px;
+      margin: 40px 0 0 40px;
+    }
+
+    .list-analysts-div-right {
+      display: flex;
+      flex-direction: column;
+      margin-left: 35px;
+
+      .list-analysts-name {
+        .m-font(30px, #222222);
+        margin-top: 44px;
+      }
+
+      .list-analysts-synopsis {
+        .base-font(24px, #666666);
+        .whl(312px, 72px, 36px);
+        overflow: hidden;
+        white-space: normal;
+        .ellipsisMore();
+        margin-top: 5px;
+      }
+
+      .list-analysts-labels {
+        display: flex;
+        margin-top: 15px;
+        .base-font(22px, #666666);
+
+        .list-analysts-label {
+          background: #DDDDDD;
+          border-radius: 18px;
+          padding: 6px 18px 6px 18px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+  }
+
+}
+
+.list {
+  background: white;
+}
+
+.research-nodata{
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .base-font(25px,#999999)
+}
+
+
+.listItem {
+  height: 256px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+
+  &:active {
+    background: #eee !important;
+  }
+}
+
+.listItemLeft {
+  float: left;
+  height: 100%;
+}
+
+.listItemTitle {
+  .whl(356px, 90px, 45px);
+  .base-font(32px, #222222);
+  .ellipsisMore();
+}
+
+.listItemInfo {
+  .whl(auto, 43px, 43px);
+  .base-font(22px, #999999);
+}
+
+.listItemLabelDiv {
+  display: flex;
+  height: 43px;
+  width: 355px;
+  padding: 0;
+  overflow-x: auto;
+  white-space: nowrap;
+  line-height: 43px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.listItemLabel {
+  .whl(auto, 36px, 36px);
+  margin-top: 7px;
+  border-radius: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
+  background: #EEEEEE;;
+  .base-font(22px, #666666);
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.listItemImg {
+  height: 176px;
+  width: 260px;
+  float: right;
+  border-radius: 15px
+}
+
+.listItemLine {
+  height: 1.5px;
+  margin-top: 216px;
+  border: none;
+  background: #F4F4F4;
+}
+
+
+
+

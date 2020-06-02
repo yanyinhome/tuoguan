@@ -1,0 +1,74 @@
+@import "./common/BaseStyle";
+.search_select_contain_pb{
+  padding: 39px 40px 0 40px;
+  height: 107px;
+  display: flex;
+  flex-direction: row;
+
+  .search_container_label_pb{
+    flex:0 0 22%;
+    .base-font(28px,#666666);
+    height: 70px;
+    line-height: 70px;
+  }
+  .search_container_select_pb{
+    flex: 0 0 78%;
+    height: 70px;
+
+    .search_select_area_pb{
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      height: 66px;
+      border-radius: 34px;
+      border: 1px solid #DDDDDD;
+      overflow: hidden;
+      align-items: center;
+
+      .search_pick_area_left{
+        flex: 0 0 85%;
+        .search_input_div{
+          width: 100%;
+          .am-list-line{
+            width: 100%;
+            padding-right: 0;
+          }
+        }
+        .search_input_div input{
+          .base-font(28px,#666666);
+        }
+      }
+      .search_pick_area_right{
+        flex: 0 0 15%;
+      }
+
+      .right_arrow_search{
+        position: absolute;
+        right: 28px;
+        width: 18px;
+        height: 18px;
+        .bg-image('../assets/common/downArrow');
+        background-size: 18px;
+      }
+
+    }
+
+  }
+}
+
+.am-list-item.am-list-item-middle{
+  height: 66px;
+  width: 100%;
+  .am-list-line{
+    padding-left: 35px;
+    height: 66px;
+    position: absolute;
+    left: 0;
+    right: 35px;
+    .am-list-extra{
+      min-width: 100%;
+      font-size: 28px;
+      text-align: left;
+    }
+  }
+}

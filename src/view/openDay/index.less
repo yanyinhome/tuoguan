@@ -1,0 +1,82 @@
+.open_day{
+    .tab{
+        .tabtitle{
+            text-align: center;
+            font-size: 26px;
+            color: #999999;
+            position: relative;
+            height: 56px;
+            line-height: 56px;
+            .redBlock{
+                position: absolute;
+                bottom: -2px;
+                height: 4px;
+                width: 100%;
+            }
+        }
+        .active{
+            font-size: 32px;
+            color: #222222;
+            font-weight: bold;
+            .redBlock{
+                span{
+                    margin: 0 auto;
+                    width: 60px;
+                    height: 4px;
+                    border-radius: 2px;
+                    display:block;
+                    background: #E6393D;
+                }
+            }
+        }
+        .borderBottom{
+            padding-bottom: 11px;
+            border-bottom:1px solid #F4F4F4;
+        }
+        .content{
+           margin: 60px 30px;
+           .transactionbox{
+               .listItem{
+                   height: 166px;
+                   margin: 0 33px;
+                   padding: 33px 0 40px;
+                   border-bottom: 1px solid #F4F4F4;
+                   .listTop{
+                       font-size: 28px;
+                       color: #222222;
+                       height: 40px;
+                       line-height: 40px;
+                       .rightIcon{
+                           height: 100%;
+                           background: url('/config/data/openday/灰色箭头.png') no-repeat center right;
+                           width: 10px;
+                           display: block;
+                           float: right;
+                       }
+                   }
+                   .listBottom{
+                       margin-top: 16px;
+                       font-size: 22px;
+                       color: #999999;
+                       height: 36px;
+                       line-height: 36px;
+                       .productState{
+                          margin-left: 27px;
+                          display: inline-block;
+                          width: 124px;
+                          height: 36px;
+                          border-radius: 18px;
+                          background: #FFD9DA;
+                          color: #E6393D;
+                          text-align: center;
+                       }
+                       .time{
+                           display: block;
+                           float: right;
+                       }
+                   }
+               }
+           }
+        }
+    }
+}

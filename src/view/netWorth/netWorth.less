@@ -1,0 +1,135 @@
+/*搜索框样式*/
+#search.search-box {
+  width: 100%;
+  padding-top: 160px;
+  margin-bottom: 30px;
+  .search{
+    width: 100%;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    flex-wrap: wrap;
+    .ipt-search {
+      flex: 1;
+      .seclect-box{
+        height: 68px;
+        width: 100%;
+        border-radius: 34px;
+        padding-left: 35px;
+        padding-right:28px;
+        position: relative;
+        background-color: #fff !important;
+      }
+    }
+  }
+  .title{
+    width: 122px;
+    font-size: 28px;
+    color: #666666;
+    margin-right:52px;
+  }
+}
+/*曲线标签*/
+.tabs {
+  width: 100%;
+  display: flex;
+  align-item: center;
+  flex-wrap: wrap;
+  padding: 0 40px;
+  margin-bottom: 42px;
+  .item-tab {
+    flex: 1;
+    button {
+      width: 190px;
+      height: 68px;
+      border-radius: 30px;
+      background-color: #fecfd1;
+      border: none;
+      color: #e83637;
+      &.active{
+        background-color: #e83637;
+        color: #fff;
+      }
+    }
+    .sel{
+      width: 100%;
+      height: 68px;
+      border-radius: 34px;
+      padding-left: 35px;
+      padding-right:28px;
+      background-color: #fff;
+    }
+  }
+}
+//净值信息
+.info-lists {
+  width: 100%;
+  display: flex;
+  align-item: center;
+  flex-wrap: wrap;
+  padding: 0 40px;
+  .info-list {
+    flex: 1;
+    line-height: 48px;
+    color: #101010;
+    font-size: 28px;
+    div{
+      &:first-child {
+        color: #666666;
+      }
+    }
+  }
+}
+/*历史清单*/
+.history-lists{
+  padding: 20px 40px;
+  .title{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f4f4f4;
+    line-height: 80px;
+    .titleText{
+      font-size: 30px;
+      color: #222222;
+      font-weight: 600;
+    }
+    .more{
+      font-size: 22px;
+      color: #222222;
+    }
+  }
+  .lists{
+    width: 100%;
+    margin-top: 30px;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      li{
+        flex: 1;
+        height: 94px;
+        line-height: 94px;
+        text-align: center;
+      }
+      &:nth-child(odd) {
+        background-color: #f8f8f8;
+      }
+      &:nth-child(even) {
+        background-color: #ffffff;
+      }
+    }
+  }
+  .history_list{
+    margin-top: 160px;
+  }
+}
+/*echart图表容器*/
+.echart-box{
+  width: 100%;
+  height: 400px;
+  padding: 0 40px;
+  .line-chart{
+    height: 400px;
+    width: 697px;
+  }
+}

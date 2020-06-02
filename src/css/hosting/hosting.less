@@ -1,0 +1,321 @@
+@import '../common/BaseStyle.less';
+.home_container{
+    width: 100%;
+    height: 100%;
+    
+}
+.am-modal-wrap /deep/.am-modal-transparent {
+    width: 100%;
+}
+.am-modal-header,.am-modal-title{
+    height: 80px;
+    font-size: 32px;
+    line-height: 80px;
+    text-align: center;
+}
+// .am-modal-header{
+//     display: flex;
+//     align-items: center;
+// }
+.am-modal-close{
+    width: 60px;
+    height: 60px;
+}
+.service-main{
+    width: 100%;
+    height: 100%;
+    .services_box{
+        height: calc(100% - 80px);
+        width: 100%;
+    }
+
+    
+}
+.newInfo{
+    background: #f5f5f5;
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    .item{
+    width: 224px;
+    height: 144px;
+    background-size: cover;
+    position: relative;
+    >span{
+        position: absolute;
+        left: 40px;
+        bottom: 20px;
+        color: white;
+    }
+    }
+}
+/* Carousel */
+.home_Carousel{
+    height: 340px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 160px 20px 20px 20px;
+    box-shadow: 2px 4px 6px 0 #CACACA;
+  }
+  
+  .home_Carousel a{
+    width: 100%;
+    height: 340px;
+  }
+  
+  .home_Carousel .imageContainer{
+    width: 100%;
+    height: 340px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .home_Carousel .am-carousel-wrap{
+    width: 100%;
+    margin-bottom: 21px;
+  }
+  
+  .home_Carousel ul{
+    height: 340px!important;
+  }
+  
+  .home_Carousel .imageContainer img{
+    width: 100%;
+    height: 340px;
+  }
+
+  /* serviceMenu */
+.home_service_menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5px 0px;
+  }
+  
+
+ .menu .images{
+    width: 48px;
+    height: 48px;
+    background-size: 48px 48px;
+  }
+  
+ .menu .title{
+    font-size:24px;
+    color: #222222;
+    margin-top: 15px;
+  }
+  
+  .home_split_line{
+    margin-top: 40px;
+    width: 100%;
+    height: 10px;
+    // background-color: #F8F8F8;
+  }
+//    product 
+.product{
+    width: 100%;
+    // padding: 20px;
+    .productAcount{
+        font-size: 28px;
+        color: #999999;
+        line-height: 80px;
+        padding: 0 40px;
+        border-bottom: 1px #eee solid;
+        
+    }
+    .productMain{
+        width: 100%;
+        display: flex;
+        padding:37px 40px 0 50px;
+        .left,.right{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+             justify-content: space-around;
+            .productItem{
+                text-align: center;
+                .pro_item_style{
+                    font-size: 22px;
+                    color: #999999;
+                    line-height: 40px;
+                }
+                .productText{
+                    font-size: 40px;
+                   
+                }
+                .setUP{
+                    color: #E83637;
+                }
+                .mj{
+                    color: #D0B07C;
+                }
+                .asset{
+                    font-size: 26px;
+                    color: #222222;
+                    font-weight: 600;
+                }
+                .liquidation{
+                    color: #A6B6C8;
+                }
+                .acount_item{
+                    font-size: 26px;
+                    color: #666666;
+                }
+
+            }
+
+        }
+        .middle{
+            flex:2;
+        }
+    }
+  
+}
+.echartBox{
+    width: 100%;
+    height: 320px;
+    #gauge{
+        height: 100%;
+        width: 100%;
+    }
+}
+.calendar{
+    width: 100%;
+    height: 400px;
+    padding:40px 0 0 0 ;
+    background-color:transparent;
+    .searchBox{
+        width: 100%;
+        display: flex;
+        height: 60px;
+        align-items: center;
+        .Protitle{
+            flex: 1;
+            font-size: 28px;
+            color: #666666;
+            text-align: center;
+            height: 60px;
+            line-height: 60px;
+        }
+        .Search{
+            flex: 2;
+            .searchBar{
+                width: 270px;
+                height: 68px;
+                padding: 5px 30px;
+                border-radius: 34px;
+                color: #666666;
+                option{
+                    overflow : hidden;
+                    text-overflow : ellipsis;
+                }
+            }
+        }
+        .btn{
+            flex: 2;
+            text-align: center;
+            display: flex;
+            // justify-content: space-around;
+            align-items: center;
+            border-radius: 50%;
+            .seting{
+                height:24px;
+                width: 24px;
+                display: inline-block;
+                background-size: cover;
+                background-image: url('../../assets/hs/seting@3x.png');
+            }
+            .setText{
+                font-size: 24px;
+                color: #E83637;
+                margin:0 45px 0 12px;
+            }
+            .setCalendar{
+                height:40px;
+                width: 40px;
+                display: inline-block;
+                background-size: cover;
+                background-image: url('../../assets/hs/Calendar@3x.png');
+            }
+        }
+    }
+   
+}
+.productList{
+    padding: 20px 40px;
+    .title{
+        display: flex;
+        justify-content: space-between;
+        line-height: 80px;
+        .titleText{
+            font-size: 36px;
+            color: #222222;
+            font-weight: 600;
+        }
+        .more{
+            font-size: 22px;
+            color: #222222;
+        }
+    }
+    
+}
+.proItem{
+    padding:50px 0 156px 0;
+}
+.productItem{
+    padding-bottom: 50px;
+    .proSubject{
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        .subject{
+            line-height: 40px;
+            font-size: 28px;
+            color: #3c3c3c;
+            font-weight: 600;
+        }
+        .count{
+            font-size: 32px;
+            color: #e83637;
+        }
+        .proTag{
+            // display: flex;
+            .code{
+                color: #b1b1b1;
+            }
+            .proType{
+                margin-left:20px;
+                background: #fecfd1;
+                line-height: 30px;
+                padding: 5px 20px;
+                border-radius: 20px;
+                color:#e83637;
+            }
+        }
+        .time{
+            color:#b1b1b1;
+        }
+    }
+}
+
+.callServer{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    .Services{
+        margin-bottom: 12px;
+        width: 126px;
+        height: 126px;
+        background-size: cover;
+        background-image: url('../../assets/hs/联系我们@3x.png');
+    }
+    .onLineSer{
+        // padding: 3px;
+        width: 126px;
+        height: 126px;
+        background-size: cover;
+        background-image: url('../../assets/hs/在线客服@3x.png');
+    }
+}

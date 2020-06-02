@@ -1,0 +1,30 @@
+before_script:
+    - mkdir -p ~/.gitlab-ci/npm/node_modules
+    - ln -s ~/.gitlab-ci/npm/node_modules
+    - npm install
+    - branch_name=${CI_BUILD_REF_NAME//\//-}
+
+build:
+    stage: build
+    except:
+        - develop
+        - /^release.*$/
+    script:
+        - sh build.sh test
+    artifacts:
+        name: ${name}`cat config.txt|cut -d "\"" -f4`
+        paths:
+            - h5App/
+develop-build:
+    stage: build
+    only:
+        - develop
+        - /^release.*$/
+    script:
+        - sh build.sh test
+        - zip -r  ${branch_name}.zip  h5App/
+        #- scp -r ${branch_name}.zip  root@10.237.2.60:~/H5/
+    artifacts:
+        name: ${name}`cat config.txt|cut -d "\"" -f4`
+        paths:
+            - h5App/

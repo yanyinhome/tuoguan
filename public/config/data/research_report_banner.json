@@ -1,0 +1,18 @@
+{
+    "data":{
+        "dura":"5",
+        "items":[{ 
+            "title": "【中信建投园区开发Ⅱ】新矿资源(1231):测试向大陆发布", 
+            "img": "research_report_banner_img\/13981.png",
+            "id": 13981            
+        }, {
+            "title": "【中信建投石油开采Ⅱ】新矿资源(1231):测试两地正常工作时间审核流程", 
+            "img": "research_report_banner_img\/13983.png",
+            "id": 13983
+        }, {
+            "title": "【中信建投石油开采Ⅱ】新矿资源(1231):测试香港人员不对外", 
+            "img": "research_report_banner_img\/13985.png",
+            "id": 13985
+        }]
+    }     
+ }

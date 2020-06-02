@@ -1,0 +1,301 @@
+@import './common/BaseStyle.less';
+
+.searchContainer{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: calc(100vh);
+
+  .resultIsNone{
+    text-align: center;
+    .base-font(26px,#999999);
+  }
+
+  /* 搜索栏 */
+  .topDiv{
+    display: flex;
+    flex-direction: row;
+    margin-top: 94px;
+    margin-left: 40px;
+    height: 68px;
+
+    .inputDiv{
+      flex: 0 0 82%;
+      background-color: #f4f4f4;
+      border-radius: 34px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .searchImage{
+      flex: 0 0 15;
+      justify-content: center;
+    }
+
+    .searchButton{
+      margin-left: 30px;
+      width: 36px;
+      height: 36px;
+      .bg-image('../assets/home/searchtop');
+      background-size: 36px 36px;
+    }
+
+    .searchInput{
+      flex: 0 0 90%;
+      background-color: #f4f4f4;
+      height: 68px;
+      display: flex;
+    }
+
+    .searchInput input{
+      .base-font(28px,#999999);
+      height: 68px;
+      margin-top: -8px;
+    }
+
+    .cancelButton{
+      flex: 0 0 15%;
+      align-items: center;
+    }
+
+    .textDiv{
+      .base-font(30px, #222222);
+      height: 68px;
+      line-height: 68px;
+      text-align: center;
+    }
+
+  }
+
+
+
+  /* 历史搜索 */
+  .historyContainer{
+    padding: 43px 40px 0px 40px;
+    height: calc(100vh - 162px);
+
+    .top{
+      display: flex;
+      flex-direction: row;
+      height: 30px;
+      align-items: center;
+      margin-bottom: 30px;
+
+      .left{
+        flex: 0 0 50%;
+        .base-font(30px,#222222);
+      }
+
+      .right{
+        flex: 0 0 50%;
+        text-align: right;
+        .base-font(24px,#666666);
+      }
+    }
+
+
+
+    .historyShowArea{
+      height: calc(100vh - 265px);
+      overflow-y: scroll;
+    }
+
+    .historyListItem{
+      display: flex;
+      flex-direction: row;
+      height: 87px;
+      align-items: center;
+      border-bottom: 1px solid #f4f4f4;
+      margin-top: 10px;
+    }
+
+    .historyListItem .icon{
+      flex: 0 0 10%;
+    }
+
+    .historyListItem .icon .iconImage{
+      width: 24px;
+      height: 24px;
+      .bg-image('../assets/home/historytime');
+      background-size: 24px;
+    }
+
+    .historyListItem .content{
+      flex: 0 0 70%;
+      .base-font(30px,#222222);
+    }
+
+    .historyListItem .delButton{
+      flex: 0 0 18%;
+    }
+
+    .historyListItem .delButton .iconImage{
+      width: 20px;
+      height: 20px;
+      .bg-image('../assets/home/sclose');
+      background-size: 20px;
+      float: right;
+    }
+  }
+
+  /* 搜索结果为空时 */
+  .searchResultIsNoneContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .images{
+      width: 400px;
+      height: 340px;
+      margin-top: 186px;
+      .bg-image('../assets/searchresult');
+      background-size: 100% 100%;
+    }
+
+    .des{
+      margin-top: 60px;
+      .base-font(30px,#999999);
+    }
+  }
+
+  /* 搜索结果 */
+  .searchResultContainer{
+      margin-top: 30px;
+      height: calc(100vh - 192px);
+      overflow: hidden;
+
+    .showArea{
+      overflow-y: visible;
+      height: calc(100vh - 282px);
+    }
+
+    .am-tabs{height:auto;
+      .am-tabs-tab-bar-wrap{
+        height: 90px;
+      }
+      .am-tabs-default-bar-top .am-tabs-default-bar-tab {border-color: #f4f4f4;}
+      .am-tabs-default-bar-tab{font-size:26px;height:auto;line-height: normal;color:#999;}
+      .am-tabs-default-bar-top .am-tabs-default-bar-tab, .am-tabs-default-bar-bottom .am-tabs-default-bar-tab{padding:33px 0 15px;}
+      .am-tabs-default-bar-tab-active{font-size:32px;color:#222;}
+      .am-tabs-default-bar-underline{border:none;text-align: center;
+        &::before{content:'';width:60px!important;height:4px;border-radius:4px;background-color:@mainColor;display:inline-block;position:relative;bottom:-3px;}
+      }
+      .am-tabs-default-bar-top .am-tabs-default-bar-tab::after{background-color:transparent!important;}
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx)  {
+      html:not([data-scale]) .am-tabs-default-bar-top .am-tabs-default-bar-tab {
+        border-bottom: 1px solid #F4F4F4;
+      }
+    }
+
+    /*  title部分 */
+    .search_module_item{
+      padding: 40px;
+    }
+
+    .search_module_item .title{
+      border-bottom: 1px solid #F4F4F4;
+      height: 70px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .search_module_item .title .name{
+      flex: 50%;
+      height: 50px;
+      .m-font(36px,#222222);
+    }
+    .search_module_item .title .right{
+      flex: 50%;
+      text-align: right;
+      .base-font(22px,#222222);
+      margin-top: 20px;
+    }
+    .search_split_line{
+      margin-top: 40px;
+      width: 100%;
+      height: 10px;
+      background-color: #F8F8F8;
+    }
+
+    /* 分析师 */
+    .search_analyst_list_container{
+      padding: 0 40px;
+
+
+
+      .analyst_item{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 200px;
+        border-bottom: 1px solid #F4F4F4;
+      }
+
+      .analyst_item .head{
+        flex: 0 0 20%;
+      }
+
+      .analyst_item .head .headImage{
+        width: 120px;
+        height: 120px;
+        border-radius: 120px;
+        border: none;
+        overflow: hidden;
+        background-color: red;
+      }
+
+      .analyst_item .content{
+        flex: 0 0 60%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .analyst_item .content .name{
+        .base-font(30px,#222222);
+        margin-bottom: 24px;
+      }
+
+      .analyst_item .content .tag{
+        display: flex;
+        flex-direction: row;
+      }
+
+      .analyst_item .content .tag .tag_item{
+        text-align: center;
+        height: 36px;
+        border-radius: 18px;
+        overflow: hidden;
+        margin-right: 10px;
+        background-color: #EEEEEE;
+        .base-font(22px,#666666);
+        padding: 6px 18px;
+      }
+
+      .analyst_item .right{
+        flex: 0 0 20%;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .analyst_item .right .guanzButton{
+        width: 114px;
+        height: 52px;
+        background: #EC3E42;
+        box-shadow: 0 4px 6px 0 rgba(236,62,66,0.20);
+        border-radius: 26px;
+        .base-font(22px,white);
+        text-align: center;
+        line-height: 52px;
+      }
+    }
+  }
+
+
+}
+
+

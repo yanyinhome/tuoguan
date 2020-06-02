@@ -1,0 +1,36 @@
+@import "./common/BaseStyle";
+
+.pdf-view {
+  .mobile__pdf__container footer {
+    height: 50px;
+  }
+  .mobile__pdf__container{overflow-y:auto;.whl(100%,calc(100vh - 144px),normal);position:relative;
+   #viewerContainer{top:0;padding:0 20px 70px;background-color:@mainGray;.whl(100%,calc(100vh - 144px),normal);
+    .page{margin:20px 0  0;border:0 none;width:auto!important;min-width:100%;
+      .canvasWrapper,canvas{width:auto!important;min-width:100%;}
+      .canvasWrapper{overflow:auto}
+    }
+   }
+  }
+  .mobile__pdf__container__header{display:none;}
+
+  .mobile__pdf__container .toolbarButton.pageUp {
+    background-size: 36px;
+  }
+
+  .mobile__pdf__container .toolbarButton.pageDown {
+    background-size: 36px;
+  }
+
+  .mobile__pdf__container .toolbarButton.zoomOut {
+    background-size: 36px;
+  }
+
+  .mobile__pdf__container .toolbarButton.zoomIn {
+    background-size: 36px;
+  }
+
+  .mobile__pdf__container #pageNumber{
+    .base-font(36px,#999999)
+  }
+}

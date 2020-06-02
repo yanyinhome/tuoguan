@@ -1,0 +1,160 @@
+/*研报通用组件样式*/
+@import "common/BaseStyle";
+
+.tagItem{overflow:hidden;overflow-x:auto;white-space: nowrap;min-width:100%;.whl(auto,42px,42px);
+  span.tag{height:36px;border-radius:18px;display:inline-block;background-color:#EEE;padding:0 18px;.base-font(22px,#666);line-height:36px;}
+}
+.tel{padding:0 0 0 30px;.bg-image('../assets/common/tel');background-size:23px 23px;background-position:0 center;.m-font(28px,@mainGray);margin-bottom:10px;}
+/*研报*/
+.ResReportsCommon{
+  .am-list-body{
+    &::before{background-color:transparent!important;}
+  }
+  .items{width:100%;display:flex;flex-wrap: wrap;justify-content: space-between;flex-direction: row;white-space: normal;
+    .infos{padding-right:26px;width:calc(100% - 260px);
+      h2{.base-font(32px,#222);.whl(100%,88px,44px);.ellipsisMore(2);}
+      p{width:100%;.base-font(22px,#999);line-height:22px;padding:15px 0;height:52px;}
+
+    }
+    .imgs{width:260px;height:176px;
+      img{width:260px;height:176px;border-radius:8px;}
+    }
+  }
+}
+
+/* 分析师 | 销售 | 研报分类
+ * 作者 | 销售 | 分析师
+ */
+.Analyst{
+  .Analyst_Items{padding:0 0 40px 40px;width:100%;
+    .items{display:flex;padding:40px 36px 40px 0;border-bottom:solid 1px #F4F4F4;width:100%;flex-flow:row wrap;
+      .info{width: calc(100% - 130px);display:flex;flex-direction:row;overflow:hidden;
+        img.head{.whl(96px,96px,normal);border-radius:50%;}
+        .infoc{padding:0 15px;width:calc(100% - 96px);}
+        p.name{.m-font(28px,@mainGray);padding-bottom:10px;}
+      }
+      .isFollow{padding-left:15px;}
+      .follow{.whl(115px,auto,normal);border:solid 2px #DDD;border-radius:25px;display:inline-block;.m-font(20px,#666);text-align:center;padding:5px 0;
+        &.false{background-color:@mainColor;color:@white!important;border-color:@mainColor;}
+        &.true{
+          &::before{content:''; width: 6px;
+            height: 13px;
+            border-color: #666;
+            border-style: solid;
+            border-width: 0 2px 2px 0; display:inline-block;margin-right:8px;
+            transform: rotate(45deg); }
+        }
+      }
+      &:last-child{border:0 none;}
+      &.center{align-items:center;}
+    }
+
+    /*扩展*/
+    &.cs-items{
+      .info{width:calc(100% - 96px);}
+    }
+  }
+}
+
+/*速评*/
+.QuickReview{.whl(100%,calc(100vh - 155px),normal);
+  .am-list-line{border-color:#F4F4F4!important;}
+  .items{width:100%;display:flex;flex-wrap: wrap;justify-content: space-between;flex-direction: row;white-space: normal;
+    .infos{padding-left:38px;width:calc(100% - 120px);
+      h2{.base-font(32px,#222);.ellipsis();
+        span.tag{height:36px;border-radius:5px;display:inline-block;background-color:#EEE;padding:0 18px;.base-font(22px,#666);line-height:36px;margin-left:15px;vertical-align: middle}
+      }
+      p{.base-font(22px,#999);line-height:22px;padding:15px 0;height:52px;}
+      h3.title{.base-font(28px,#222);.whl(100%,88px,44px);.ellipsisMore(2);}
+    }
+    .imgs{width:120px;height:120px;
+      img{width:120px;height:120px;border-radius:50%;}
+    }
+  }
+}
+
+/*特色产品*/
+.FeatProductsComm{.whl(100%,calc(100vh - 155px),normal);
+  .items_list{margin-bottom:40px;padding:0 0 0 40px;overflow:hidden;
+    .list{padding-right:40px;}
+  }
+  .am-tabs .am-tabs-default-bar-top .am-tabs-default-bar-tab{border-top:none!important;background-color: @white}
+  .proConn{padding:40px 0 40px;
+    .pro_item{.whl(100%,270px,100%);background-color:#F4F4F4;border-radius:5px;padding:36px 24px;
+      h2{.whl(100%,45px,45px);.base-font(32px,#222);.ellipsis();}
+      p{.base-font(22px,#999);.whl(100%,53px,33px);padding:15px 0;}
+      h3{.base-font(28px,#222);.whl(100%,auto,42px);.ellipsisMore(2);padding-top:28px;}
+    }
+  }
+}
+
+.TabsVerticalCommon{.whl(100%,calc(100vh - 144px),normal);
+  &.line{border-top:solid 1px #F4F4F4;}
+  .am-tabs{height:calc(100vh - 144px)!important;
+    .am-tabs-tab-bar-wrap{width:228px;padding:0!important;height:auto!important;min-height:100%;background-color:#F9F9F9;
+      .am-tabs-default-bar-tab{.whl(100%,87px,87px);height:87px!important;.m-font(24px,#999);
+        &.am-tabs-default-bar-tab-active{background-color:@white;.m-font(24px,#222)}
+        &::after{background-color:transparent!important;}
+      }
+      .am-tabs-default-bar{background-color:transparent!important;}
+    }
+    .am-tabs-content-wrap{height:calc(100vh - 144px);}
+    .am-tabs-default-bar-underline{display:none}
+    .am-tabs-default-bar-content{width:228px!important;height:100vh!important;background-color:#F9F9F9!important;}
+    .icon{padding-left:40px;.whl(100%,auto,normal);vertical-align:middle;
+      img{.whl(36px,36px,normal);vertical-align:middle;margin-right:15px;}
+    }
+  }
+}
+
+/*研报分类*/
+.ResReportClazzListCommon,.ResReportClazzFollowCommon{.whl(100%,calc(100vh - 144px),normal);padding:0 40px;
+  .res-header{.whl(100%,auto,normal);padding:25px 0;display:flex;flex-direction:row;justify-content: space-between;border-bottom:solid 1px #F4F4F4;
+    span{display:block;width:33.3333%;.base-font(26px,@mainGray);}
+  }
+  .res-conn,.resp-list-conn{
+    h2{.base-font(28px,@mainGray);padding:40px 0;border-bottom:solid 1px #F4F4F4;}
+    ul li{.whl(100%,auto,normal);padding:25px 0;display:flex; flex-direction:row;justify-content: space-between;border-bottom:solid 1px #F4F4F4;align-items:center;
+      span{display:inline-block;width:33.3333%;.base-font(26px,@mainGray);}
+    }
+    .follow{.whl(115px,auto,normal);border:solid 2px #DDD;border-radius:25px;display:inline-block;.m-font(20px,#666);text-align:center;padding:5px 0;
+      &.false{background-color:@mainColor;color:@white!important;border-color:@mainColor;}
+      &.true{
+        &::before{content:''; width: 6px;
+          height: 13px;
+          border-color: #666;
+          border-style: solid;
+          border-width: 0 2px 2px 0; display:inline-block;margin-right:8px;
+          transform: rotate(45deg); }
+      }
+    }
+  }
+  .resp-list-conn{
+    ul li{
+      span{padding-left:30px;}
+      span:first-child{width:66.6666%;}
+    }
+  }
+}
+
+.am-swipe-btn-text{.base-font(30px,#FFF);padding:0 30px;}
+
+/*
+ * 活动
+ */
+.Activity{width:100%;padding:40px 0 0;
+    .items_list{margin-bottom:40px;padding:0 0 0 40px;overflow:hidden;
+      .list{padding-right:40px;}
+    }
+    .act_item{padding:55px 95px!important;position:relative;overflow:hidden;border-radius:8px;height:320px;
+      display:flex;justify-content:center;align-items:center;flex-wrap:wrap;text-align:center;
+      h2{.base-font(30px,#222);.ellipsisMore(2);.whl(100%,84px,42px);z-index:2;}
+      p{width:100%;display:block;.base-font(24px,#222);z-index:2;}
+      .isstart{position:absolute;right:0;top:0;padding:4px 15px;border-top-right-radius:8px;border-bottom-left-radius:8px;.base-font(20px,@white);z-index:2;
+        &.gray{background-color:#999;}
+        &.blue{background-color:#3389FF;}
+        &.red{background-color:@mainColor;}
+      }
+      img{object-fit:cover;width:100%;height:100%;position:absolute;right:0;top:0;left:0;}
+    }
+}

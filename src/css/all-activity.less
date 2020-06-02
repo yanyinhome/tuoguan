@@ -1,0 +1,141 @@
+@import "./common/BaseStyle";
+.allActivityContainer{
+  width: 100%;
+  height: calc(100vh - 155px);
+  overflow-y: auto;
+   /* 顶部推荐 */
+  .activityTop{
+    margin:40px 40px 20px 40px;
+    height: 360px;
+
+    .act_Carousel{
+      position: relative;
+      height: 360px;
+    }
+
+    .act_Carousel .imageContainer{
+      width: 100%;
+      height: 320px;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .act_Carousel .am-carousel-wrap{
+      width: 100%;
+    }
+
+    .act_Carousel .slider-decorator-0{
+       height: 35px!important;
+      position: absolute!important;
+      top: 325px!important;
+    }
+
+    .act_Carousel .am-carousel-wrap-dot{
+      margin-right: 8px;
+      height: 10px;
+      width: 10px;
+    }
+
+    .act_Carousel .am-carousel-wrap-dot-active{
+        width: 24px;
+        border-radius: 5px;
+        height: 10px;
+        >span{
+          width: 24px;
+          height: 10px;
+          border-radius: 5px;
+          margin-top: -1px;
+        }
+    }
+
+
+    .act_Carousel .imageContainer img{
+      width: 100%;
+      height: 320px;
+    }
+    .act_Carousel .slider.am-carousel.slider-frame.slider-list{
+      height: 320px;
+    }
+    .act_Carousel ul{
+      height: 320px!important;
+    }
+  }
+
+  .activitySplitLine{
+    height: 10px;
+    background-color: #F8F8F8;
+  }
+
+  /* 底部样式表 */
+  .activityBottomContainer{
+     width: 100%;
+    .am-tabs{
+      height:auto;
+      .am-tabs-tab-bar-wrap{
+        height: 99px!important;
+        padding: 0!important;
+      }
+      .am-tabs-pane-wrap.am-tabs-pane-wrap-active{
+        overflow-y: visible;
+      }
+    }
+  }
+}
+
+/* 活动模块 */
+.activityMoudleContainer{
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  margin-bottom: 40px;
+
+  .moudleTag{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .moudleTag .item{
+    width: 90px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 8px;
+    background-color: #3389FF;
+    .base-font(20px,#FFFFFF);
+  }
+
+  .moudleTitle{
+    .m-font(30px,#222222);
+    margin: 40px 0;
+    padding: 0 94px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  .moudleTime{
+    .base-font(24px,#222222);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .moudleType{
+    .base-font(24px,#222222);
+    text-align: center;
+  }
+}
+
+/* 活动列表 */
+.activityMoudleListContainer{
+  padding: 40px 40px 0px 40px;
+  .activityMoudleContainer_none{
+    height: 100%;
+    text-align: center;
+    .base-font(26px,#999999);
+  }
+}
