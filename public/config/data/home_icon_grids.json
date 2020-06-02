@@ -15,7 +15,7 @@
         }, {
             "title": "业务白皮书", 
             "img": "home_icon_grids_img\/whiteBook@3x.png",
-            "route": ""
+            "route": "whitePaper"
         }, {
             "title": "产品信息", 
             "img": "home_icon_grids_img\/productInfo@3x.png",

@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-import "../css/c-search-product.less";
+import "./style/c-search-product.less";
 import {Picker,List,InputItem} from 'antd-mobile';
 import bd_utils from "../utils/bd_utils";
 

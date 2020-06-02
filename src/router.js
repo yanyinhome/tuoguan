@@ -16,6 +16,7 @@ import Turnover from './view/turnover/index'
 import Taxation from './view/taxation/index'
 import OpenDay from './view/openDay/index'
 import ProductInfo from './view/productInfo/index'
+import WhitePaper from './view/whitePaper/index'
 import ConfirmationSummary from './view/confirmationSummary/index'
 import SummaryTurnover from './view/confirmationSummary/summaryTurnover/index'
 import Notice from './view/notice/index'
@@ -43,6 +44,7 @@ export default class AppRouter extends Component{
                     <CacheRoute path="/customerShareDetail" component={CustomerShareDetail}/> 
                     <CacheRoute path="/openDay" component={OpenDay}/> 
                     <CacheRoute path="/productInfo" component={ProductInfo}/> 
+                    <CacheRoute path="/whitePaper" component={WhitePaper}/> 
                     <CacheRoute path="/confirmationSummary" component={ConfirmationSummary}/>
                     <CacheRoute path="/summaryTurnover" component={SummaryTurnover}/>
                     <CacheRoute path="/confirmationSummaryDetail" component={ConfirmationSummaryDetail}/>
