@@ -1,0 +1,129 @@
+/*色调*/
+@mainColor: #E6393D; @mainGray:#222;
+@white:#FFF; @blue:#30A0FF;
+/*字体默认*/
+@fontColor: #333333;
+/*字体*/
+@fontFace: 'PingFangSC-Regular';
+/*navbar高度*/
+@navbarHeight: 144px;
+/*默认线条颜色*/
+@defLineColor:#F4F4F4;
+/* @2x  @3x 图片使用 */
+.bg-image(@url){
+  background-image:~"url('@{url}@2x.png')";
+  background-size:cover;
+  background-repeat: no-repeat;
+  @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3){
+    background-image:~"url('@{url}@3x.png')";
+  }
+}
+.tr{text-align:right;}
+.tc{text-align:center;}
+.tl{text-align:left;}
+/*通用字体*/
+.fontcomm{font-family: 'PFM';color:#222;}
+/*通用布局*/
+#root{height:100vh;}
+//tabbar
+.am-navbar-title{font-family: 'PFM';color:#222;font-size:32px;}
+/*toast*/
+.am-toast-text{.base-font(26px,#FFF)}
+/*ibody*/
+.hidContent{.whl(100%,100vh,normal);overflow:hidden;}
+.ibody{padding-top:144px;overflow:hidden;height:100vh;
+  /*tab*/
+  .am-tabs.am-tabs-horizontal{
+    .am-tabs-tab-bar-wrap{height:87px!important;}
+    .am-tabs-default-bar-content{position: fixed;z-index: 99;.whl(100%,87px,normal);background-color: @white}
+    .am-tabs-default-bar-top .am-tabs-default-bar-tab {border-color: #F4F4F4!important; }
+    .am-tabs-default-bar-tab{font-size:26px;height:auto;line-height: normal;color:#999;}
+    .am-tabs-default-bar-top .am-tabs-default-bar-tab, .am-tabs-default-bar-bottom .am-tabs-default-bar-tab{padding:33px 0 15px;}
+    .am-tabs-default-bar-tab-active{font-size:32px;color:#222;}
+    .am-tabs-default-bar-underline{border:none;text-align: center;
+      &::before{content:'';width:60px!important;height:4px;border-radius:4px;background-color:@mainColor;display:inline-block;position:relative;bottom:-3px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -o-border-radius: 4px;
+      }
+    }
+    .am-tabs-default-bar-top .am-tabs-default-bar-tab::after{background-color:transparent!important;}
+  }
+  .am-tabs.am-tabs-vertical{
+    .am-tabs-default-bar-content{width:100%;}
+  }
+}
+.am-tabs-pane-wrap{
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/*选择器*/
+.am-picker-popup-body{
+  .am-picker-popup-header{border:0 none;background-image: none;
+    &::after{background-color:@defLineColor;}
+    .am-picker-popup-item{.base-font(28px,@blue);height:80px;}
+  }
+  .am-picker-col{height:580px;}
+  .am-picker-col-indicator{height:80px;}
+  .am-picker-col-item{.base-font(30px,@mainGray);height:80px;line-height:80px;}
+}
+/*箭头*/
+em.arrR{border: solid @mainColor;border-width: 0 2px 2px 0;display: inline-block;padding: 5px; transform: rotate(-45deg);-webkit-transform: rotate(-45deg);}
+
+*{padding:0;margin:0;box-sizing: border-box;}
+body{ row-height: 50px;background-color:@white;touch-action: none;
+  font-stretch: normal;font-style: normal;font-variant: normal;font-weight: normal;font-weight-over: 700;
+  -webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;
+  -webkit-overflow-scrolling: touch;min-height: 100vh;min-width: 320px;font-family:  'PFM';
+}
+h1,h2,h3,h4,h5,h6{font-weight:500;}
+ul, li, ol{list-style: none;}
+em,i,u{font-style:normal;}
+a{text-decoration: none;color: #222;-webkit-tap-highlight-color:transparent;}
+code{.m-font(24px,#666);display:block;}
+/*scrollbar*/
+::-webkit-scrollbar {width:0;}
+::-webkit-scrollbar:horizontal {height:0;}
+::-webkit-scrollbar-button {height:0;width:0;}
+
+&::-webkit-scrollbar {
+  display: none;
+}
+/*字号-颜色*/
+.base-font(@font-size:22px,@font-color:'black') {
+  font-size: @font-size!important;
+  color: @font-color!important;
+}
+
+.m-font(@font-size:22px,@font-color:'black') {
+  font-family: 'PingFangSC-Medium'!important;
+  font-size: @font-size!important;
+  color: @font-color!important;
+}
+
+/*宽-高-行高*/
+.whl(@w:auto,@h:auto,@l:auto) {
+  width: @w;
+  height: @h;
+  line-height: @l;
+}
+
+/*禁止换行，文本溢出省略*/
+.ellipsis() {
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/*多行文本溢出省略*/
+.ellipsisMore(@n:2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @n;
+  -webkit-box-orient: vertical;
+}

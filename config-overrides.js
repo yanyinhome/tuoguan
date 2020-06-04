@@ -16,5 +16,5 @@ module.exports = override(
     /* 解除使用public限制 */
     removeModuleScopePlugin(),
     /*  自适应转换 */
-    addPostcssPlugins([px2rem({remUnit: 75, exclude: './node_modules/'})]),
+    addPostcssPlugins([px2rem({remUnit: 75, exclude: './node_modules/i'})]),
 );

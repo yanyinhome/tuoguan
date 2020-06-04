@@ -53,7 +53,9 @@ class Search extends Component{
         // const {searchParam}=this.state;
         // const newSearchParam=Object.assign({},searchParam,{id})
         // this.setState({searchParam:newSearchParam},()=>{this.props.output(newSearchParam)})
-        return;
+    }
+    searchValueCallBack=(productName)=>{
+        api_services.getProductList(this.initSearchList,this.show,{productName})
     }
     render () {
         return (
@@ -65,7 +67,8 @@ class Search extends Component{
                 text="productName"
                 val="productNo"
                 keyType="id"
-                handleChange={this.getProductParam}
+                selectValueCallBack={this.getProductParam}
+                searchValueCallBack={this.searchValueCallBack}
                 />
                 <Select
                 title="客户名称"
@@ -73,7 +76,7 @@ class Search extends Component{
                 text="name"
                 val="val"
                 keyType="id"
-                handleChange={this.getinvestorname}
+                selectValueCallBack={this.getinvestorname}
                 />
             </div>
         )

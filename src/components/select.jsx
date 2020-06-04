@@ -1,4 +1,5 @@
 import React,{ Component } from "react";
+import CustomSearchProduct from "./c-search-product";
 import  "./style/select.less"
 
 export default class SelectBox extends Component {
@@ -9,19 +10,15 @@ export default class SelectBox extends Component {
     }
     render(){
         const data=this.props.data||[];
-        const handleChange=this.props.handleChange?this.props.handleChange:()=>{}
-        // const optionlist=data.map(item=><option key={item.id} value={item.productNo}>{item.productName}</option>)
-        const optionlist=data.map(item=><option key={item[this.props.keyType]} value={item[this.props.val]}>{item[this.props.text]}</option>)
+        const productList=data.map(item=>{return {label:item[this.props.text],value:item[this.props.val]}})
         return(
             <section className="search">
-                <span className={`title`}>{this.props.title}</span>
                 <div className={`ipt-search`}>
-                    <select className='seclect-box' onChange={
-                        e=>handleChange(e.target.value)}
-                        >
-                       {this.props.define?<option value="">请选择产品...</option>:""} 
-                      {optionlist}
-                    </select>
+                    <CustomSearchProduct 
+                    {...this.props}
+                    data={productList}
+                    titleLabel={this.props.title}
+                    />
                 </div>
             </section>
         )
