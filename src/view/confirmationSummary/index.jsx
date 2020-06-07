@@ -117,6 +117,7 @@ const HistoryList=({dataSource=[],parentProps,productNo})=>{
         
     }
     const goDetail=(param)=>{
+        console.log(1)
         const newParam=Object.assign({},param,{productNo});
         const option={pathname:"confirmationSummaryDetail",query:newParam}
         parentProps.push(option)
