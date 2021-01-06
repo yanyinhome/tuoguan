@@ -10,7 +10,7 @@
     "alloyfinger": "^0.1.16",
     "antd": "^4.2.4",
     "antd-mobile": "^2.3.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "css3transform": "^1.2.3",
     "echarts": "^4.7.0",
     "echarts-for-react": "^2.0.15-beta.1",
