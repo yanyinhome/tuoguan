@@ -27,7 +27,7 @@
     "qs": "^6.9.3",
     "rc-form": "^2.4.11",
     "react": "^16.13.1",
-    "react-dev-utils": "10.2.1",
+    "react-dev-utils": "11.0.4",
     "react-dom": "^16.13.1",
     "react-read-pdf": "^2.0.9",
     "react-router-cache-route": "^1.8.4",
